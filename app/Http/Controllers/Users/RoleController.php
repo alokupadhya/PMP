@@ -1,7 +1,8 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Users;
 
+use App\Http\Controllers\Controller;
 use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
@@ -13,7 +14,7 @@ use Inertia\Response;
 class RoleController extends Controller
 {
     /**
-     * Display the user's profile form.
+     * Display the roles list.
      */
     public function index(Request $request): Response
     {
@@ -23,5 +24,27 @@ class RoleController extends Controller
         ]);
     }
 
-    
+    /**
+     * Create the role.
+     */
+    public function create(): RedirectResponse
+    {
+
+    }
+
+    /**
+     * Update the role.
+     */
+    public function update(): RedirectResponse
+    {
+        
+    }
+
+    /**
+     * Delete the role.
+     */
+    public function destroy(): RedirectResponse
+    {
+
+    }
 }
