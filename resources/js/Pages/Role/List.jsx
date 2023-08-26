@@ -4,7 +4,7 @@ import React from 'react'
 import Faker from './Faker'
 
 const tableDataBinder = (data, key) => {
-    return <tr key={key}>
+    return <tr key={key} className='border'>
         <td className='text-left px-6 py-3'>{data.id}</td>
         <td className='text-left px-6 py-3'>{data.title}</td>
         <td className='text-left px-6 py-3'>{data.gaurd}</td>
